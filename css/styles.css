@@ -1183,4 +1183,70 @@ fill: var(--mark-color);
   background-size: cover;
 }
 
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ZADANIE DOMOWE 6@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.newsletter-text
+{
+  position: relative;
+  width: 207px;
+  height: 16px;
+  left: 41px;
+  top: 71px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.newsletter-input
+{
+  width: 358px;
+  height: 50px;
+  background-color:var(--background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  top: 70px;
+  left: 41px;
+  margin-right: 12px;
+}
+.newsletter-button
+{
+  width: 200px;
+  height: 50px;
+  background-color:var(--mark-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  position: relative;
+  left: 38px;
+  top: 71px;
+  border: #2196f3;
+  
 
+}
+.icon-send-svg
+{
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 7px;
+  margin-left: 12px;
+}
+.footer-list-newsletter
+{
+  list-style-type: none;
+}
+.newsletter-button .text-button-newsletter
+{
+  position: relative;
+  top: -3px;
+  left: 1px;
+}
