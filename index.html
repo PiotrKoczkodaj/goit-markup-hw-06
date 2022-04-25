@@ -17,12 +17,40 @@
     
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="close-btn"data-modal-close>
+        <p class="modal-text">Zostaw swoje dane w formularzu poniżej</p>
+        
+        <button type="button" class="close-btn" data-modal-close>
             <svg class="icon-close-btn" width="18" height="18">
                 <use href="images/symbol-defs.svg#icon-close-btn"></use>
             </svg>
+        </button> 
         
-        </button>  
+            <form class="form-modal">
+                <label for="username">
+                <p class="username-text">Imie</p>
+                <input class="username" name="username" type="text">
+            </label>
+            <label for="user-phone">
+                <p class="user-phone-text">Telefon</p>
+                <input class="user-phone" name="user-phone-number" type="text">
+            </label>
+            <label for="user-email">
+                <p class="user-email-text">Email</p>
+                <input class="user-email" name="user-email" type="text">
+            </label>
+            <p class="place-for-comment-text">Komentarz</p>
+            <textarea class="place-for-comment" name="Comment" rows="5"placeholder="Wprowadź tekst"></textarea>
+            <label>
+            <input type="checkbox" name="policy">
+            <p class="policy-and-statue-text">
+                Oświadczam iż akceptuję 
+                <a class="statue-link" href="#">Regulamin</a> i <a class="policy-link" href="#">Politykę Prywatności.</a></p>
+            </label>
+            
+        </form>
+
+        
+         
     </div>
 </div>
     <!--Header-->
@@ -420,7 +448,7 @@
                 </ul>
             </li>
             <li class="footer-list-newsletter">
-     <form name="signup-form">
+     <form class="newsletter-form" name="signup-form">
         <label>
             <p class="newsletter-text">Zapisz się do newslettera</p>
             <input placeholder="E-mail" class="newsletter-input"type="email" name="email"/>
