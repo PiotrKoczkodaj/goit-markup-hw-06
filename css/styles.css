@@ -1389,5 +1389,50 @@ color: var(--mark-color);
   letter-spacing: 0.03em;
   color: var(--third-color);
   position: relative;
-  right: -36px;
+  right: -19px;
+}
+.policy-and-statue-text::before
+{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--main-color);
+  position: relative;
+  top: 3px;
+  right: 7px;
+  border-radius: 4px;
+}
+.policy-and-statue-text:checked + .policy-and-statue-text
+{
+color: red;
+}
+.checkbox-input:checked + .policy-and-statue-text::before
+{
+background-color: var(--mark-color);
+border: none;
+background-image: url(../images/Vector7.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+.checkbox-input
+{
+  visibility: hidden;
+}
+.button-form
+{
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-color:var(--mark-color);
+  cursor: pointer;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  position: relative;
+  top: 18px;
+  left: 125px;
 }
