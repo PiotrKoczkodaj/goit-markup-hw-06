@@ -1281,6 +1281,7 @@ position: absolute;
   margin-left: 40px;
   
 }
+
 .username
 {
   width: 448px;
@@ -1291,8 +1292,13 @@ position: absolute;
   position: relative;
   top: -24px;
   margin-top: 4px;
-
+  outline: 0;
 }
+.username:focus-within
+{
+  border: 2px solid var(--mark-color);
+}
+
 .username-text
 {
   font-weight: 400;
@@ -1313,7 +1319,12 @@ position: absolute;
   position: relative;
   top: -26px;
   margin-top: 4px;
+  outline: none;
 
+}
+.user-phone:focus-within
+{
+  border: 2px solid var(--mark-color);
 }
 .user-phone-text
 {
@@ -1335,7 +1346,12 @@ position: absolute;
   position: relative;
   top: -26px;
   margin-top: 4px;
+  outline: none;
 
+}
+.user-email:focus-within
+{
+  border: 2px solid var(--mark-color);
 }
 .user-email-text
 {
@@ -1360,6 +1376,11 @@ position: absolute;
   position: relative;
   top: -26px;
   margin-top: 4px;
+  outline: none;
+}
+.place-for-comment:focus-within
+{
+  border: 2px solid var(--mark-color);
 }
 .place-for-comment-text
 {
@@ -1435,4 +1456,34 @@ background-position: center;
   position: relative;
   top: 18px;
   left: 125px;
+}
+.icon-user
+{
+  position: relative;
+  top: -21px;
+  right: 452px;
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+}
+
+.icon-phone 
+{
+    position: relative;
+    top: -21px;
+    right: 452px;
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+ 
+}
+.icon-email
+{
+      position: relative;
+      top: -21px;
+      right: 452px;
+      width: 18px;
+      height: 18px;
+      margin-left: 12px;
+
 }
