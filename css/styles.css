@@ -1293,8 +1293,12 @@ position: absolute;
   top: -24px;
   margin-top: 4px;
   outline: 0;
+  padding-left: 42px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.username:focus-within
+.username:focus
 {
   border: 2px solid var(--mark-color);
 }
@@ -1320,9 +1324,13 @@ position: absolute;
   top: -26px;
   margin-top: 4px;
   outline: none;
+  padding-left: 42px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.user-phone:focus-within
+.user-phone:focus
 {
   border: 2px solid var(--mark-color);
 }
@@ -1347,11 +1355,16 @@ position: absolute;
   top: -26px;
   margin-top: 4px;
   outline: none;
+  padding-left: 42px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.user-email:focus-within
+.user-email:focus
 {
   border: 2px solid var(--mark-color);
+  
 }
 .user-email-text
 {
@@ -1377,6 +1390,10 @@ position: absolute;
   top: -26px;
   margin-top: 4px;
   outline: none;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .place-for-comment:focus-within
 {
@@ -1423,11 +1440,11 @@ color: var(--mark-color);
   top: 3px;
   right: 7px;
   border-radius: 4px;
+      transition-property: background-color ;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.policy-and-statue-text:checked + .policy-and-statue-text
-{
-color: red;
-}
+
 .checkbox-input:checked + .policy-and-statue-text::before
 {
 background-color: var(--mark-color);
@@ -1460,11 +1477,14 @@ background-position: center;
 .icon-user
 {
   position: relative;
-  top: -21px;
+  top: -19px;
   right: 452px;
   width: 18px;
   height: 18px;
   margin-left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-phone 
@@ -1475,6 +1495,9 @@ background-position: center;
     width: 18px;
     height: 18px;
     margin-left: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 .icon-email
@@ -1485,5 +1508,26 @@ background-position: center;
       width: 18px;
       height: 18px;
       margin-left: 12px;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.username:focus + .icon-user
+{
+  fill: var(--mark-color);
+}
+.user-email:focus+.icon-email {
+  fill: var(--mark-color);
+  
+}
+.username:focus+.icon-user {
+  fill: var(--mark-color);
+}
+.user-phone:focus+.icon-phone {
+  fill: var(--mark-color);
+}
+.textarea-for-comment
+{
+  font-size: 12px;
 }
